@@ -25,11 +25,18 @@
   .action_btn{
     margin:auto 1rem;
   }
+  .content1{
+    background: url(home_bg.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-color: #00000046;
+  }
 
 
   .navbar {
     /*background-color: rgb(62, 73, 73);*/
-    background-image: linear-gradient(180deg, #000, #00000000);
+    background-image: linear-gradient(180deg, #000,#000000c0, #00000000);
     height: 80px;
   }
   
@@ -65,11 +72,6 @@
     border-bottom: solid;
     background-image: linear-gradient(180deg, #00000000, #00000000, #43ccd1b5);
     transition: all ease-in-out 0.3s;
-  }
-
-
-  .end {
-    /*background-image: linear-gradient(180deg, #fff,#000);*/
   }
 
   .end {
