@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% block head %}
+  {% endblock head %}
+
+  {% if title %}
+  <title>FitlifeGuide | {{title}}</title>
+  {% else %}
+  <title>FitlifeGuide</title>
+  {% endif %}
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <div class="logo"><a>FitLifeGuide</a></div>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li>
+
+      <button class="action_btn"><a href="">Sign Up</a></button>
+      <button class="action_btn"><a href="">Log in</a></button>
+    </ul>
+  </div>
+
+  {% block content %}
+  {% endblock content %}
+
+  <div class="end">
+    <div class="logo">
+      <a href="">FitLifeGuide</a>
+    </div>
+
+    <div class="wrapper">
+      <div class="social">
+        <h6>Social Media</h6>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X/Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h6>Contact Us</h6>
+        <ul>
+          <li><a href="#">1234-123-1234</a></li>
+          <li><a href="#">fitlifeguide@gmail.com</a></li>
+          <li><a href="#">www.fitlifeguide.com</a></li>
+        </ul>
+      </div>
+
+      <div class="help">
+        <h6>Help</h6>
+        <ul>
+          <li><a href="#">Suggestions & Recommendation</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+
+      <div class="more">
+        <h6>More</h6>
+        <ul>
+          <li><a href="#">Guidelines</a></li>
+          <li><a href="#">Terms & Services</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="copyright">
+      <p>
+        &copy; 2024 FitLifeGuide. All rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

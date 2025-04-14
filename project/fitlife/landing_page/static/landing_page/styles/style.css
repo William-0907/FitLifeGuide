@@ -1,0 +1,127 @@
+  * {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #212435;
+    color: white;
+  }
+  a {
+    color: rgb(207, 250, 250);
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  ul{
+    display: flex;
+    margin:0 1rem;
+    place-items: center;
+  }
+  .action_btn{
+    margin:auto 1rem;
+  }
+
+
+  .navbar {
+    /*background-color: rgb(62, 73, 73);*/
+    background-image: linear-gradient(180deg, #000, #00000000);
+    height: 80px;
+  }
+  
+  .logo , .logo a{
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 1rem;
+  }
+
+  .navbar li a{
+    font-weight: bold;
+    display: inline-flex;
+    padding: 15px 30px;
+  }
+
+  button {
+    color: rgb(202, 255, 255);
+    font-weight: bold;
+    background-color: #00000000;
+    border-radius: 5px;
+    border: 1px solid cyan;
+    cursor: pointer;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0s;
+  }
+
+  button:hover {
+    background-color: rgba(14, 189, 212, 0.6);
+  }
+  .navbar li a:hover {
+    color: aqua;
+    border-bottom: solid;
+    background-image: linear-gradient(180deg, #00000000, #00000000, #43ccd1b5);
+    transition: all ease-in-out 0.3s;
+  }
+
+
+  .end {
+    /*background-image: linear-gradient(180deg, #fff,#000);*/
+  }
+
+  .end {
+    background-color: black;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .end li a{
+    padding:5px;
+    justify-content: start;
+  }
+
+  .wrapper {
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .wrapper h6 {
+    color: aqua;
+    margin-left: 1rem;
+    cursor: default;
+  }
+
+  .wrapper li{
+    font-weight: lighter;
+    margin: 1rem;
+  }
+  .wrapper li a{
+    text-align: left;
+  }
+
+  .wrapper ul {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    background-color: #3b3b3b1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 1rem;
+  }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  {% if title %}
+  <title>FitlifeGuide | {{title}}</title>
+  {% else %}
+  <title>FitlifeGuide</title>
+  {% endif %}
+  <style>
+
+    * {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #212435;
+      color: white;
+    }
+
+    li {
+      list-style: none;
+
+    }
+
+    .navbar {
+      /*background-color: rgb(62, 73, 73);*/
+      background-image: linear-gradient(180deg,#000, #00000000);
+      width: 100%;
+      height: 80px;
+      padding-right: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+
+      color: rgb(207, 250, 250);
+      text-decoration: none;
+      padding: 15px 30px;
+    }
+    li a:hover {
+      color: aqua;
+      border-bottom: solid;
+      background-image: linear-gradient(180deg,#00000000, #00000000, #43ccd1b5);
+      transition: all ease-in-out 0.3s;
+
+    }
+
+    .logo {
+      margin-right: auto;
+    }
+
+    .navbar .logo a {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem;
+
+    }
+
+    .navbar .nav li {
+      font-weight: bold;
+      display: inline-flex;
+    }
+
+    .navbar .nav li a {
+      transition: all 0.2s ease 0s;
+    }
+
+    .nav-signup {
+      display: flex;
+    }
+
+    button {
+      color: rgb(202, 255, 255);
+      font-weight: bold;
+      background-color: #00000000;
+      border-radius: 5px;
+      border: 1px solid cyan;
+      cursor: pointer;
+      padding: 9px 25px;
+      transition: all 0.3s ease 0s;
+    }
+
+    button:hover {
+      background-color: rgba(14, 189, 212, 0.6);
+    }
+
+
+
+
+
+    .end {
+      /*background-image: linear-gradient(180deg, #fff,#000);*/
+    }
+    .end {
+      background-color: black;
+      display: block;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+    }
+    .wrapper {
+      background-color: black;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+    .wrapper h6 {
+      color: aqua;
+      margin-left: 1rem;
+      cursor: default;
+    }
+    .wrapper li {
+      font-weight: lighter;
+      margin: 1rem;
+    }
+    .wrapper ul {
+      display:block;
+      box-sizing:border-box;
+    }
+
+    .copyright {
+      background-color: #3b3b3b1f;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .copyright p {
+      font-size: 1rem;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="#">FitLifeGuide</a>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <a><button>Log In</button></a>
+        <a><button>Sign Up</button></a>
+      </ul>
+    </div>
+  </div>
+
+  {% block content %} {% endblock content %}
+
+  <div class="end">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">FitLifeGuide</a>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="social">
+        <h6>Social Media</h6>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X/Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h6>Contact Us</h6>
+        <ul>
+          <li><a href="#">1234-123-1234</a></li>
+          <li><a href="#">fitlifeguide@gmail.com</a></li>
+          <li><a href="#">www.fitlifeguide.com</a></li>
+        </ul>
+      </div>
+      <div class="help">
+        <h6>Help</h6>
+        <ul>
+          <li><a href="#">Suggestions & Recommendation</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+      <div class="more">
+        <h6>More</h6>
+        <ul>
+          <li><a href="#">Guidelines</a></li>
+          <li><a href="#">Terms & Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="copyright">
+      <p>
+        &copy; 2024 FitLifeGuide. All rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
