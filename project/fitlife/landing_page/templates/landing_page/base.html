@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,14 +32,15 @@
 
 <body>
 
-  <div class="signup-form">
+  <div class="signup-box">
     <form action="" method="post">
-      <input type="text" name="" id="" placeholder="Username">
-      <input type="email" name="" id="" placeholder="Email">
-      <input type="password" name="" id="" placeholder="Password">
+      <input type="text" name="username" id="username-box" placeholder="Username">
+      <input type="email" name="email" id="email-box" placeholder="Email">
+      <input type="password" name="password" id="password-box" placeholder="Password">
       <button type="">SIGN UP</button>
     </form>
   </div>
+  
   
   <div class="content1"> 
     
@@ -59,26 +61,7 @@
       </ul>
     </div>
 
-
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -91,18 +74,6 @@
     {% block content2 %}
     {% endblock content2 %}
   
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
