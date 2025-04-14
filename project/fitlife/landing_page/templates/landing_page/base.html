@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    function signupFormActive(){
+      var checkbox1 = document.getElementById("signup-chkbox");
+      checkbox1.checked = !checkbox1.checked;
+    }
+    function loginFormActive(){
+      var checkbox2 = document.getElementById("login-chkbox");
+      checkbox2.checked = !checkbox2.checked;
+    }
+
+  </script>
 
   {% block head %}
   {% endblock head %}
@@ -17,26 +30,89 @@
 </head>
 
 <body>
-  
 
-
+  <div class="signup-form">
+    <form action="" method="post">
+      <input type="text" name="" id="" placeholder="Username">
+      <input type="email" name="" id="" placeholder="Email">
+      <input type="password" name="" id="" placeholder="Password">
+      <button type="">SIGN UP</button>
+    </form>
+  </div>
   
+  <div class="content1"> 
+    
+
     <div class="navbar">
+      <div class="chk-box">
+        <input type="checkbox" id="signup-chkbox">
+        <input type="checkbox" id="login-chkbox">
+      </div>
+
       <ul>
         <div class="logo"><a>FitLifeGuide</a></div>
         <li><a href="">About Us</a></li>
         <li><a href="">Contact Us</a></li>
 
-        <button class="action_btn"><a href="">Sign Up</a></button>
-        <button class="action_btn"><a href="">Log in</a></button>
+        <button class="action_btn" onclick="signupFormActive()">Sign Up</button>
+        <button class="action_btn" onclick="loginFormActive()">Log in</button>
       </ul>
     </div>
-  <div class="content1">
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {% block content1 %}
     {% endblock content1 %}
   </div>  
-    
+    {% block content2 %}
+    {% endblock content2 %}
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="end">
     <div class="logo">
