@@ -18,30 +18,18 @@
     list-style: none;
   }
   .nav ul{
+    flex-direction: row;
     display: flex;
-    place-items: center;
   }
-  #search-bar{
-    place-items: center;
-  }
-  .search-btn{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-left: 0;
-  }
-  .textbox{
+
+  .search-box{
+    
+    border-radius: 25px;
     padding: 4px;
-    width: 200px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    width: 230px;
     background: transparent;
     color: rgb(254, 255, 255);
     border: 1px solid aqua;
-  }
-
-  #nav-btn li a i{
-    font-size: 20px;
-    padding: 15px;
   }
 
   .navbar {
@@ -55,7 +43,8 @@
     position: fixed;
   }
   .nav{
-    padding: 1.5rem;
+    place-items: center;
+    margin: auto 1.5rem;
   }
   
   #logo , #logo a{
@@ -64,8 +53,11 @@
   }
 
   .nav li a{
+    font-size: 15px;
+    padding: 15px;
     font-weight: 100;
     display: inline-flex;
+    border-bottom: transparent solid 1px;
   }
 
   button {
@@ -86,12 +78,11 @@
   .nav li a:hover {
     color: rgba(0, 255, 255, 0.781);
     background-image: linear-gradient(180deg, #00000000, #06879121, #43ccd186);
-    
+    border-bottom: solid 1px;
+    translate: 0 -1px;
   }
 
-  .nav li a:hover {
-    border-bottom: solid 1px;
-  }
+
 
 
   .sidebar{
@@ -102,6 +93,7 @@
     border: 1px solid rgb(0, 0, 0);
     width: 20%;
     height: 100%;
+    top: 80px;
     margin: auto;
     right: 0;
     position: fixed;
@@ -142,7 +134,8 @@
   }
 
   .content{
-    margin: 80px;
+    margin-top: 100px;
+    margin-right: 20%;
   }
 
 
@@ -156,6 +149,7 @@
 
 
   .end {
+    padding-top: 30px;
     background-color: black;
     display: block;
     bottom: 0;

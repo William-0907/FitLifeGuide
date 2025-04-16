@@ -7,7 +7,7 @@
   content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
   
-  <link rel="stylesheet" href= "{% static 'mainpage/styles/base.css' %}" >
+  <link rel="stylesheet" href= "{% static 'mainpage/styles/basestyle.css' %}" >
 
   {% block head %} {% endblock head %}
 
@@ -26,20 +26,19 @@
 
     <div class="nav" id="nav-btn">
       <ul>
-        <li><a href="#"> <i class="fa-solid fa-house" alt="home"></i> </a></li>
-        <li><a href="#"><i class="fa-solid fa-calendar-days" alt="tasks"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-utensils" alt="meal plan"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-comments" alt="Feeds"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-cart-shopping" alt="shop"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-book" alt="guides"></i></a></li>
+        <li id="home"><a href="#">HOME</a></li>
+        <li><a href="#">PLANNER</a></li>
+        <li><a href="#">COMMUNITY</a></li>
+        <li><a href="#">ARTICLES</i></a></li>
+        <li><a href="#">VIDEOS</i></a></li>
+        <li><a href="#">STORE</i></a></li>
       </ul>
     </div>
     
 
     <div class="nav" id="search-bar">
       <form action="" method="post">
-        <input class="textbox" type="text" name="" id="" placeholder="Search">
-        <button class="search-btn">  Search</button>
+        <input class="search-box" type="search" name="" id="" placeholder="  Search">
       </form>
     </div>
   </div>
@@ -67,11 +66,12 @@
       <li><a href="">Customer Service</a></li><hr>
       <li><a href="">Logout</a></li><hr>
     </ul>
-    
   </div>
 
+  <div class="content">
     {% block content %}
     {% endblock content %}
+  </div>
 
   <div class="end">
     <div id="logo"  class="nav">
