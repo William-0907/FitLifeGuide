@@ -95,19 +95,24 @@
 
 
   .sidebar{
-    position:sticky;
-    display: block;
+    display: flex;
     background-color: #0f0f11;
     box-sizing: border-box;
     box-shadow: -5px 0 5px #110f20ea;
     border: 1px solid rgb(0, 0, 0);
-    flex-direction: column;
     width: 20%;
     height: 100%;
     transition:1s all;
     margin: 80px auto;
     right: 0;
-    position:fixed;
+    position: fixed;
+  }
+  .sidebar li{
+    
+  }
+  .pfp{
+    border: solid cyan 1px;
+    border-radius: 50%;
   }
 
 

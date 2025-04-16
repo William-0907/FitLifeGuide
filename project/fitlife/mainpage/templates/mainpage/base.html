@@ -7,6 +7,8 @@
   content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href= "{% static 'mainpage/styles/basestyle.css' %}" >
+
   {% block head %} {% endblock head %}
 
   {% if title %}
@@ -43,21 +45,31 @@
   </div>
 
   <div class="sidebar">
-     <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
+    <ul>
+      <li><img class="pfp" src="{% static 'mainpage\images\house-chimney.svg' %}" alt="" height="20px"> <h3>William 0907</h3></li>
+      <hr>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <hr>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+      <li><a href="">hello</a></li>
+    </ul>
+    
   </div>
   
 
-  {% block content %} {% endblock content %}
+  {% block content %}
+  
+  {% endblock content %}
+
+
+
 
   <div class="end">
     <div id="logo"  class="nav">
