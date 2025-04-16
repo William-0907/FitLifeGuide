@@ -1,4 +1,4 @@
-  * {
+* {
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -6,11 +6,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .signup-box{
+  #signup-chkbox:checked ~ #signup-box {
     display: flex;
+  }
+  
 
+  .signup-box{
+    display: none;
     text-align: center;
-    position: fixed;
+    position: absolute;
     background-color: #212435;
     box-sizing: border-box;
     box-shadow: -5px 0 5px #110f20ea;
@@ -18,16 +22,11 @@
     border: 1px solid cyan;
     flex-direction: column;
     width: 400px;
-    height: fit-content;
     padding: 5%;
     top: 30%;
     transition:1s all;
     margin: 0 35%;
-  }
-
-  #signup-chkbox:checked~.signup-box{
-    display: block;
-  }
+   } 
 
   body {
     background-color: #212435;

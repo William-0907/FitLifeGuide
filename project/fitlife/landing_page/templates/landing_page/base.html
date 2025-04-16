@@ -6,16 +6,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index-style.css' %}" >
   <script>
+
+    
+
+
     function signupFormActive(){
-      var checkbox1 = document.getElementById("signup-chkbox");
+      let checkbox1 = document.getElementById("signup-chkbox");
       checkbox1.checked = !checkbox1.checked;
     }
     function loginFormActive(){
-      var checkbox2 = document.getElementById("login-chkbox");
+      let checkbox2 = document.getElementById("login-chkbox");
       checkbox2.checked = !checkbox2.checked;
     }
+    
 
   </script>
 
@@ -31,6 +36,10 @@
 </head>
 
 <body>
+  <div class="chk-box">
+    <input type="checkbox" id="signup-chkbox">
+    <input type="checkbox" id="login-chkbox">
+  </div>
 
   <div class="signup-box">
     <form action="" method="post">
@@ -41,15 +50,11 @@
     </form>
   </div>
   
-  
   <div class="content1"> 
     
 
     <div class="navbar">
-      <div class="chk-box">
-        <input type="checkbox" id="signup-chkbox">
-        <input type="checkbox" id="login-chkbox">
-      </div>
+      
 
       <ul>
         <div class="logo"><a>FitLifeGuide</a></div>

@@ -6,8 +6,8 @@
   <meta name="viewport"
   content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href= "{% static 'mainpage/styles/basestyle.css' %}" >
+  
+  <link rel="stylesheet" href= "{% static 'mainpage/styles/base.css' %}" >
 
   {% block head %} {% endblock head %}
 
@@ -26,12 +26,12 @@
 
     <div class="nav" id="nav-btn">
       <ul>
-        <li><a href="#"> <i class="fa-solid fa-house"></i> </a></li>
-        <li><a href="#"><i class="fa-solid fa-calendar-days"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-utensils"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-comments"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-book"></i></a></li>
+        <li><a href="#"> <i class="fa-solid fa-house" alt="home"></i> </a></li>
+        <li><a href="#"><i class="fa-solid fa-calendar-days" alt="tasks"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-utensils" alt="meal plan"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-comments" alt="Feeds"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping" alt="shop"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-book" alt="guides"></i></a></li>
       </ul>
     </div>
     
@@ -45,31 +45,33 @@
   </div>
 
   <div class="sidebar">
+    <div class="profile-bar">
+      <a href=""><img class="pfp" src="{% static 'mainpage\images\house-chimney.svg' %}" alt="" height="30px"> <h3>William-0907</h3></a>
+    </div>
     <ul>
-      <li><img class="pfp" src="{% static 'mainpage\images\house-chimney.svg' %}" alt="" height="20px"> <h3>William 0907</h3></li>
+      <ul>
+        
+        <li><a href="">Your Profile</a></li>
+        <li><a href="">Set Status</a></li>
+        <li><a href="">Edit Profile</a></li>
       <hr>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
+      <li><a href="">Friends</a></li>
+      <li><a href="">Ask FitLife AI</a></li>
+      <li><a href="">Watch Workout Videos</a></li>
+      <li><a href="">Read Health Tips</a></li>
+      <li><a href="">Events</a></li>
       <hr>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
-      <li><a href="">hello</a></li>
+      <li><a href="">Settings</a></li>
+      <li><a href="">Privacy And Security</a></li>
+      <li><a href="">Help</a></li>
+      <li><a href="">Customer Service</a></li><hr>
+      <li><a href="">Logout</a></li><hr>
     </ul>
     
   </div>
-  
 
-  {% block content %}
-  
-  {% endblock content %}
-
-
-
+    {% block content %}
+    {% endblock content %}
 
   <div class="end">
     <div id="logo"  class="nav">
@@ -105,7 +107,7 @@
         <h6>More</h6>
         <ul>
           <li><a href="#">Guidelines</a></li>
-          <li><a href="#">Terms & Services</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
         </ul>
       </div>
     </div>
