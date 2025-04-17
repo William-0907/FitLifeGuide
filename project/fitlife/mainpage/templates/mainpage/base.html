@@ -7,7 +7,7 @@
   content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
   
-  <link rel="stylesheet" href= "{% static 'mainpage/styles/basestyle.css' %}" >
+  <link rel="stylesheet" href= "{% static 'mainpage/styles/base.css' %}" >
 
   {% block head %} {% endblock head %}
 
@@ -26,16 +26,40 @@
 
     <div class="nav" id="nav-btn">
       <ul>
-        <li id="home"><a href="#">HOME</a></li>
-        <li><a href="#">PLANNER</a></li>
-        <li><a href="#">COMMUNITY</a></li>
-        <li><a href="#">ARTICLES</i></a></li>
-        <li><a href="#">VIDEOS</i></a></li>
+        <li><a href="#">HOME</a></li>
+        <li id="planner"><a href="#">PLANNER</a>
+          <ul class="dropdown" id="plan">
+            <li><a href="">Meal Planner</a></li>
+            <li><a href="">Workout Planner</a></li>
+          </ul>
+        </li>
+
+        <li id="community"><a href="#">COMMUNITY</a>
+          <ul class="dropdown" id="comm">
+            <li><a href="">Community</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Subreddit</a></li>
+          </ul>
+        </li>
+
+        <li id="articles"><a href="#">ARTICLES</i></a>
+          <ul class="dropdown" id="arti">
+            <li><a href="">Health Articles</a></li>
+            <li><a href="">Healthy Recipes</a></li>
+          </ul>
+        </li>
+
+        <li id="videos"><a href="#">VIDEOS</i></a>
+          <ul class="dropdown" id="vids">
+            <li><a href="">Workout Videos</a></li>
+            <li><a href="">Training for specific Sports?</a></li>
+          </ul>
+        </li>
+        
         <li><a href="#">STORE</i></a></li>
       </ul>
     </div>
     
-
     <div class="nav" id="search-bar">
       <form action="" method="post">
         <input class="search-box" type="search" name="" id="" placeholder="  Search">
@@ -60,7 +84,7 @@
       <li><a href="">Read Health Tips</a></li>
       <li><a href="">Events</a></li>
       <hr>
-      <li><a href="">Settings</a></li>
+      <li><a href="{% url 'test' %}">Settings</a></li>
       <li><a href="">Privacy And Security</a></li>
       <li><a href="">Help</a></li>
       <li><a href="">Customer Service</a></li><hr>
