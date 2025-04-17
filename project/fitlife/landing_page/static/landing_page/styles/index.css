@@ -1,4 +1,4 @@
-  * {
+* {
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -6,11 +6,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .signup-box{
-    display: flex;
+  #chk-box{
+    display: none;
+  }
 
+/*.blur-background {
+    filter: blur(5px); /* Or use backdrop-filter: blur(5px); */
+  
+
+
+  .form-popup{
+    display: none;
     text-align: center;
-    position: fixed;
+    position: absolute;
     background-color: #212435;
     box-sizing: border-box;
     box-shadow: -5px 0 5px #110f20ea;
@@ -18,16 +26,12 @@
     border: 1px solid cyan;
     flex-direction: column;
     width: 400px;
-    height: fit-content;
     padding: 5%;
     top: 30%;
     transition:1s all;
     margin: 0 35%;
-  }
-
-  #signup-chkbox:checked~.signup-box{
-    display: block;
-  }
+    z-index: 999;
+   } 
 
   body {
     background-color: #212435;
@@ -102,7 +106,7 @@
   }
   .cta{
     text-align: center;
-    padding: 150px;
+    padding: 140px;
   }
 
   .cta h2{

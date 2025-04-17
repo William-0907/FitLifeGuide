@@ -6,19 +6,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href= "{% static 'landing_page/styles/index-style.css' %}" >
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index.css' %}" >
   <script>
-
-    
 
 
     function signupFormActive(){
       let checkbox1 = document.getElementById("signup-chkbox");
       checkbox1.checked = !checkbox1.checked;
+      if (checkbox1.checked){
+        document.getElementById("signup-box").style.display = "block";
+        document.body.classList.add("blur-background");
+      }
+      else{
+        document.getElementById("signup-box").style.display = "none";
+        document.body.classList.remove("blur-background");
+      }
+      
     }
     function loginFormActive(){
       let checkbox2 = document.getElementById("login-chkbox");
       checkbox2.checked = !checkbox2.checked;
+      if (checkbox2.checked){
+        document.getElementById("login-box").style.display = "block";
+      }
+      else{
+        document.getElementById("login-box").style.display = "none";
+      }
     }
     
 
@@ -36,17 +49,25 @@
 </head>
 
 <body>
-  <div class="chk-box">
+  <div id="chk-box">
     <input type="checkbox" id="signup-chkbox">
     <input type="checkbox" id="login-chkbox">
   </div>
 
-  <div class="signup-box">
+  <div class="form-popup" id="signup-box">
     <form action="" method="post">
       <input type="text" name="username" id="username-box" placeholder="Username">
       <input type="email" name="email" id="email-box" placeholder="Email">
       <input type="password" name="password" id="password-box" placeholder="Password">
       <button type="">SIGN UP</button>
+    </form>
+  </div>
+
+  <div class="form-popup" id="login-box">
+    <form action="" method="post">
+      <input type="text" name="username" id="username-box" placeholder="Username">
+      <input type="password" name="password" id="password-box" placeholder="Password">
+      <button type="">LOGIN</button>
     </form>
   </div>
   

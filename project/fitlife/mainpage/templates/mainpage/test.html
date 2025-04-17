@@ -9,20 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'mainpage/styles/test.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="/script.js" defer></script>
+    <script>
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+    </script>
   </head>
   <body>
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li>
-        <a href="#">ABOUT</a>
-        <ul id="hidden">
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </li>
-      <li><a href="#">CONTACT US</a></li>
-    </ul>
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
   </body>
 </html>
