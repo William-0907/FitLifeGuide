@@ -10,3 +10,5 @@ def test(request):
 
 def discussions(request):
     return render(request, 'mainpage/discussions.html')
+
+
