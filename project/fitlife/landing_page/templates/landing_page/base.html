@@ -6,33 +6,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href= "{% static 'landing_page/styles/index.css' %}" >
+
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index-style.css' %}" >
+  <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
   <script>
 
 
-    function signupFormActive(){
-      let checkbox1 = document.getElementById("signup-chkbox");
-      checkbox1.checked = !checkbox1.checked;
-      if (checkbox1.checked){
-        document.getElementById("signup-box").style.display = "block";
-        document.body.classList.add("blur-background");
+    function  formActive(name){
+      const modal = document.getElementById(name);
+      if (modal.style.display === "none"){
+        modal.style.display = "flex";
       }
       else{
-        document.getElementById("signup-box").style.display = "none";
-        document.body.classList.remove("blur-background");
+        modal.style.display = "none";
       }
-      
     }
-    function loginFormActive(){
+
+    function closeModal(name){
+      document.getElementById(name).style.display = "none";
+    }
+
+    /*function loginFormActive(){
       let checkbox2 = document.getElementById("login-chkbox");
       checkbox2.checked = !checkbox2.checked;
       if (checkbox2.checked){
         document.getElementById("login-box").style.display = "block";
+        document.getElementById("signup-box").style.display = "none";
       }
       else{
         document.getElementById("login-box").style.display = "none";
       }
-    }
+    }*/
     
 
   </script>
@@ -49,28 +53,29 @@
 </head>
 
 <body>
-  <div id="chk-box">
-    <input type="checkbox" id="signup-chkbox">
-    <input type="checkbox" id="login-chkbox">
-  </div>
 
-  <div class="form-popup" id="signup-box">
-    <form action="" method="post">
-      <input type="text" name="username" id="username-box" placeholder="Username">
-      <input type="email" name="email" id="email-box" placeholder="Email">
-      <input type="password" name="password" id="password-box" placeholder="Password">
-      <button type="">SIGN UP</button>
-    </form>
-  </div>
-
-  <div class="form-popup" id="login-box">
-    <form action="" method="post">
-      <input type="text" name="username" id="username-box" placeholder="Username">
-      <input type="password" name="password" id="password-box" placeholder="Password">
-      <button type="">LOGIN</button>
-    </form>
+  <div class="modal" id="signup-modal">
+    <i class="fa-solid fa-circle-xmark" onclick="closeModal('signup-modal')"></i>
+    <div class="form-popup" id="signup-box">
+      <form action="" method="post">
+        <input type="text" name="username" id="username-box" placeholder="Username">
+        <input type="email" name="email" id="email-box" placeholder="Email">
+        <input type="password" name="password" id="password-box" placeholder="Password">
+        <button type="">SIGN UP</button>
+      </form>
+    </div>
   </div>
   
+  <div class="modal" id="login-modal">
+    <i class="fa-solid fa-circle-xmark" onclick="closeModal('login-modal')"></i>
+    <div class="form-popup" id="login-box">
+      <form action="" method="post">
+        <input type="text" name="username" id="username-box" placeholder="Username">
+        <input type="password" name="password" id="password-box" placeholder="Password">
+        <button type="">LOGIN</button>
+      </form>
+    </div>
+  </div>
   <div class="content1"> 
     
 
@@ -82,8 +87,8 @@
         <li><a href="">About Us</a></li>
         <li><a href="">Contact Us</a></li>
 
-        <button class="action_btn" onclick="signupFormActive()">Sign Up</button>
-        <button class="action_btn" onclick="loginFormActive()">Log in</button>
+        <button class="action_btn" onclick="formActive('signup-modal')">Sign Up</button>
+        <button class="action_btn" onclick="formActive('login-modal')">Log in</button>
       </ul>
     </div>
 

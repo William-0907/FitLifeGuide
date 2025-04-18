@@ -7,7 +7,7 @@
   }
 
   #chk-box{
-    display: none;
+    display: block;
   }
 
 /*.blur-background {
