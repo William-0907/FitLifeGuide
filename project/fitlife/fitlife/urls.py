@@ -21,5 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', include('landing_page.urls')),
     path('', include('mainpage.urls')),
-    path('', include('mainpage.urls')),
 ]

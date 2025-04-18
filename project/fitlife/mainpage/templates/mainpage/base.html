@@ -26,7 +26,7 @@
 
     <div class="nav" id="nav-btn">
       <ul>
-        <li><a href="#">HOME</a></li>
+        <li><a href="{% url 'home' %}">HOME</a></li>
         <li id="planner"><a href="#">PLANNER</a>
           <ul class="dropdown" id="plan">
             <li><a href="">Meal Planner</a></li>
@@ -36,7 +36,7 @@
 
         <li id="community"><a href="#">COMMUNITY</a>
           <ul class="dropdown" id="comm">
-            <li><a href="">Community</a></li>
+            <li><a href="{% url 'discussions' %}">Discussions</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Subreddit</a></li>
           </ul>

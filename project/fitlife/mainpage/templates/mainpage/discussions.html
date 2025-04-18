@@ -1,0 +1,113 @@
+{% extends 'mainpage/base.html' %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'mainpage/styles/discussions-style.css' %}">
+
+    <script>
+
+    </script>
+
+
+{% endblock head %}
+  
+
+{% block content %}
+
+<div class="header">
+    <h1 style="font-size: 2rem;">Discussions</h1>
+    <div class="action-btn">
+        <button>Start a Discussion</button>
+    </div>
+</div>
+
+
+{% for discussion in discussions %}
+    <div class="discussion-container">
+        <div id="discussion-info">
+            <h1>{{title}}</h1>
+            <p><a href="">{{author}}</a>{{date_created}}</p>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+<div class="discussion-container">
+    <div class="discussion-info">
+        <h1>Discussion 1</h1>
+        <p>by <a href="">Lorem ipsum</a> at june 5 2025</p>
+    </div>
+    <div class="action-btn">
+        <a href=""><i class="fa-solid fa-comments"><p>Reply</p></i></a>
+        <label><i class="fa-solid fa-thumbs-up"><p id="like">0</p></i></label>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,9 @@
+.container{
+    margin: 1% 15%;
+    padding: 3% 5%;
+    border-bottom: rgba(0, 255, 255, 0.267) solid .1px;
+    width: fit-content;
+    }
+    .container h1{
+      font-size: large;
+    }

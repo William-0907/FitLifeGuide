@@ -1,0 +1,33 @@
+.header{
+    margin: 1% 15%;
+    padding: 3% 5%;
+    border-bottom: rgba(0, 255, 255, 0.267) solid .1px;
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin: auto inherit;
+    }
+
+
+.discussion-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 15%;
+    padding: 3% 5%;
+    border: rgba(0, 255, 255, 0.267) solid .1px;
+    width: inherit;
+    }
+    .discussion-info{
+        border: none;
+        text-align: left;
+        width: 50%;
+    }
+    .container h1{
+      font-size: large;
+    }
+    i{
+        font-size: 15px;
+        color: aliceblue;
+        text-align: center;
+        margin: auto 20px;
+    }
