@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href= "{% static 'landing_page/styles/index-style.css' %}" >
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index.css' %}" >
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
   <script>
 
@@ -55,7 +55,7 @@
 <body>
 
   <div class="modal" id="signup-modal">
-    <i class="fa-solid fa-circle-xmark" onclick="closeModal('signup-modal')"></i>
+    <p id="close" onclick="closeModal('signup-modal')">×</p>
     <div class="form-popup" id="signup-box">
       <form action="" method="post">
         <input type="text" name="username" id="username-box" placeholder="Username">
@@ -67,7 +67,7 @@
   </div>
   
   <div class="modal" id="login-modal">
-    <i class="fa-solid fa-circle-xmark" onclick="closeModal('login-modal')"></i>
+    <p id="close" onclick="closeModal('login-modal')">×</p>
     <div class="form-popup" id="login-box">
       <form action="" method="post">
         <input type="text" name="username" id="username-box" placeholder="Username">
@@ -98,12 +98,6 @@
     {% block content2 %}
     {% endblock content2 %}
   
-
-
-
-
-
-
 
 
 

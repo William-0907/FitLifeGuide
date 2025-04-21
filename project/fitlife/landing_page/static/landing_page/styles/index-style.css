@@ -33,6 +33,8 @@ i:hover{
   position: absolute;
   flex-direction: column;
   gap: 10px;
+  z-index: 3;
+  
 }
 #signup-box,#login-box{
   display: block;
@@ -51,7 +53,7 @@ i:hover{
   /* top: 30%; */
   transition:1s all;
   /* margin: 0 35%; */
-  z-index: 1;
+  
  } 
 
 body {
@@ -167,6 +169,7 @@ button:hover {
   bottom: 0;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 .end li a{
   padding:5px;
@@ -214,4 +217,34 @@ button:hover {
 
 .copyright p {
   font-size: 1rem;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+  *{
+    margin:0;
+    padding:0;
+  }
+  .navbar ul li a,button{
+    display:none;
+  }
+  .navbar ul .logo{
+    margin: auto;
+    
+  }
+  
+  .end{
+    width: 100%;
+    
+  }
+  .wrapper{
+    display: none;
+    
+  }
+  
 }
