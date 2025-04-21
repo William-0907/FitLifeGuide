@@ -156,10 +156,10 @@ background-color: #0f0f11f5;
     height: 0%;
   }
   50%{
-    height: 10%;
+    height:  15%;
   }
   100%{
-    height: fit-content;
+    height: max-content;
   }
 }
 
@@ -176,17 +176,6 @@ background-color: #0f0f11f5;
   margin-top: 100px;
   margin-right: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .end {
   padding-top: 30px;
