@@ -7,7 +7,7 @@
   content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
   
-  <link rel="stylesheet" href= "{% static 'mainpage/styles/basestyle.css' %}" >
+  <link rel="stylesheet" href= "{% static 'mainpage/styles/base.css' %}" >
 
   {% block head %} {% endblock head %}
 
@@ -33,6 +33,7 @@
             <li><a href="">Workout Planner</a></li>
           </ul>
         </li>
+
 
         <li id="community"><a href="#">COMMUNITY</a>
           <ul class="dropdown" id="comm">
@@ -67,30 +68,53 @@
     </div>
   </div>
 
+  {% if is_authenticated %}
+    <div class="sidebar">
+      <div class="profile-bar">
+        <a href=""><img class="pfp" src="{% static 'mainpage\images\house-chimney.svg' %}" alt="" height="30px"> <h3>William-0907</h3></a>
+      </div>
+      <ul>
+          <li><a href="">Your Profile</a></li>
+          <li><a href="">Set Status</a></li>
+          <li><a href="">Edit Profile</a></li>
+        <hr>
+        <li><a href="">Friends</a></li>
+        <li><a href="">Ask FitLife AI</a></li>
+        <li><a href="">Watch Workout Videos</a></li>
+        <li><a href="">Read Health Tips</a></li>
+        <li><a href="">Events</a></li>
+        <hr>
+        <li><a href="{% url 'test' %}">Settings</a></li>
+        <li><a href="">Privacy And Security</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href="">Customer Service</a></li><hr>
+        <li><a href="">Logout</a></li><hr>
+      </ul>
+    </div>
+  {% else %}
   <div class="sidebar">
     <div class="profile-bar">
       <a href=""><img class="pfp" src="{% static 'mainpage\images\house-chimney.svg' %}" alt="" height="30px"> <h3>William-0907</h3></a>
     </div>
     <ul>
-      <ul>
-        
-        <li><a href="">Your Profile</a></li>
-        <li><a href="">Set Status</a></li>
-        <li><a href="">Edit Profile</a></li>
-      <hr>
-      <li><a href="">Friends</a></li>
-      <li><a href="">Ask FitLife AI</a></li>
-      <li><a href="">Watch Workout Videos</a></li>
-      <li><a href="">Read Health Tips</a></li>
-      <li><a href="">Events</a></li>
-      <hr>
-      <li><a href="{% url 'test' %}">Settings</a></li>
-      <li><a href="">Privacy And Security</a></li>
-      <li><a href="">Help</a></li>
-      <li><a href="">Customer Service</a></li><hr>
-      <li><a href="">Logout</a></li><hr>
-    </ul>
+      <li><a href=""><button >Sign Up</button></a></li>
+      <li><a href=""><button>Login</button></a></li>
+    <hr>
+    <li><a href="">Ask FitLife AI</a></li>
+    <li><a href="">Watch Workout Videos</a></li>
+    <li><a href="">Read Health Tips</a></li>
+    <li><a href="">Events</a></li>
+    <hr>
+    <li><a href="{% url 'test' %}">Settings</a></li>
+    <li><a href="">Privacy And Security</a></li>
+    <li><a href="">Help</a></li>
+    <li><a href="">Customer Service</a></li><hr>
+    <li><a href="">Logout</a></li><hr>
+  </ul>
   </div>
+  
+  
+  {% endif %}
 
   <div class="content">
     {% block content %}

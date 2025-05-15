@@ -9,6 +9,9 @@
 #chk-box{
   display: block;
 }
+.form-header{
+  font-size: 2rem;
+}
 
 i{
   font-size: 25px;
@@ -33,6 +36,7 @@ i:hover{
   position: absolute;
   flex-direction: column;
   gap: 10px;
+  z-index: 3;
 }
 #signup-box,#login-box{
   display: block;
@@ -51,7 +55,7 @@ i:hover{
   /* top: 30%; */
   transition:1s all;
   /* margin: 0 35%; */
-  z-index: 1;
+  z-index: 4;
  } 
 
 body {
@@ -167,6 +171,7 @@ button:hover {
   bottom: 0;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 .end li a{
   padding:5px;

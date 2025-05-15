@@ -125,7 +125,6 @@ button:hover {
   
 }
 .dropdown{
-  background-color: #0f0f11f5;
   border-radius: 10px;
   padding: 10px;
 }
@@ -138,16 +137,30 @@ button:hover {
 
 }
 #plan,#comm,#arti,#vids{
+  height: 0;
   display: block;
   position: fixed;
-
+  overflow-y: hidden;
 }
 
 #videos a:hover + #vids, #vids:hover,
 #articles a:hover + #arti, #arti:hover,
 #community a:hover + #comm, #comm:hover,
 #planner a:hover + #plan, #plan:hover {
- display: block;
+background-color: #0f0f11f5;
+ animation: drop 1s ease ;
+ height: fit-content; 
+}
+@keyframes drop{
+  0%{
+    height: 0%;
+  }
+  50%{
+    height:  15%;
+  }
+  100%{
+    height: max-content;
+  }
 }
 
 
@@ -163,17 +176,6 @@ button:hover {
   margin-top: 100px;
   margin-right: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .end {
   padding-top: 30px;

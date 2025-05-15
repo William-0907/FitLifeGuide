@@ -6,10 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href= "{% static 'landing_page/styles/index-style.css' %}" >
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index.css' %}" >
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
-  <script>
+    <script>
 
 
     function  formActive(name){
@@ -58,10 +57,12 @@
     <i class="fa-solid fa-circle-xmark" onclick="closeModal('signup-modal')"></i>
     <div class="form-popup" id="signup-box">
       <form action="" method="post">
+        <h2 class="form-header">Sign Up</h2>
+        {%  csrf_token %}
         <input type="text" name="username" id="username-box" placeholder="Username">
         <input type="email" name="email" id="email-box" placeholder="Email">
         <input type="password" name="password" id="password-box" placeholder="Password">
-        <button type="">SIGN UP</button>
+        <button class="form-button" type="submit">SIGN UP</button>
       </form>
     </div>
   </div>
@@ -70,9 +71,11 @@
     <i class="fa-solid fa-circle-xmark" onclick="closeModal('login-modal')"></i>
     <div class="form-popup" id="login-box">
       <form action="" method="post">
+        {% csrf_token %}
+        <h2 class="form-header">Log In</h2>
         <input type="text" name="username" id="username-box" placeholder="Username">
         <input type="password" name="password" id="password-box" placeholder="Password">
-        <button type="">LOGIN</button>
+        <button class="form-button" type="submit">LOGIN</button>
       </form>
     </div>
   </div>
@@ -98,14 +101,6 @@
     {% block content2 %}
     {% endblock content2 %}
   
-
-
-
-
-
-
-
-
 
 
 
@@ -159,6 +154,8 @@
       </p>
     </footer>
   </div>
+
+
 </body>
 
 </html>
