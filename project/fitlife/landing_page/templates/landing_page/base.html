@@ -55,7 +55,7 @@
 <body>
 
   <div class="modal" id="signup-modal">
-    <p id="close" onclick="closeModal('signup-modal')">×</p>
+    <p id="close" onclick="closeModal('signup-modal')"><i class="fa-solid fa-circle-xmark"></i></p>
     <div class="form-popup" id="signup-box">
       <form action="" method="post">
         <h2 class="form-header">Sign Up</h2>
@@ -69,7 +69,7 @@
   </div>
   
   <div class="modal" id="login-modal">
-    <p id="close" onclick="closeModal('login-modal')">×</p>
+    <p id="close" onclick="closeModal('login-modal')"><i class="fa-solid fa-circle-xmark"></i></p>
     <div class="form-popup" id="login-box">
       <form action="" method="post">
         {% csrf_token %}
