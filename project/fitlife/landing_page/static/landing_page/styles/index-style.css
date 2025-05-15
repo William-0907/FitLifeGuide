@@ -55,7 +55,11 @@ i:hover{
   /* top: 30%; */
   transition:1s all;
   /* margin: 0 35%; */
+<<<<<<< HEAD
   z-index: 4;
+=======
+  
+>>>>>>> bc035af147dee6970d38eebabe85cd9f72b36420
  } 
 
 body {
@@ -219,4 +223,34 @@ button:hover {
 
 .copyright p {
   font-size: 1rem;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+  *{
+    margin:0;
+    padding:0;
+  }
+  .navbar ul li a,button{
+    display:none;
+  }
+  .navbar ul .logo{
+    margin: auto;
+    
+  }
+  
+  .end{
+    width: 100%;
+    
+  }
+  .wrapper{
+    display: none;
+    
+  }
+  
 }

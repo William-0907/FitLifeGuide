@@ -142,6 +142,8 @@ button:hover {
   text-align: center;
   padding: 140px;
 }
+<<<<<<< HEAD
+=======
 
 .cta h2{
   font-size: 1.5rem;
@@ -151,6 +153,26 @@ button:hover {
   margin:  2rem auto;
 }
 
+.cta h1{
+  font-size: 6rem;
+  
+  font-weight: 100;
+  background: -webkit-linear-gradient(45deg,#fda3ea,#b8c9ff,#c6fffa);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*background-image: linear-gradient(45deg,#ff85e5,#b4abff,rgb(129, 236, 255));*/
+}
+>>>>>>> bc035af147dee6970d38eebabe85cd9f72b36420
+
+.cta h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.cta button{
+  margin:  2rem auto;
+}
+
+<<<<<<< HEAD
 .cta h1{
   font-size: 6rem;
   
@@ -228,4 +250,113 @@ button:hover {
 
 .copyright p {
   font-size: 1rem;
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+.end {
+  background-color: black;
+  display: block;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.end li a{
+  padding:5px;
+  justify-content: start;
+}
+
+.wrapper {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.wrapper h6 {
+  color: aqua;
+  margin-left: 1rem;
+  cursor: default;
+}
+
+.wrapper li{
+  font-weight: lighter;
+  margin: 1rem;
+}
+.wrapper li a{
+  font-weight: 100;
+  text-align: left;
+}
+
+.wrapper ul {
+  display: block;
+  box-sizing: border-box;
+}
+
+.copyright {
+  background-color: #3b3b3b1f;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright p {
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+  *{
+    margin:0;
+    padding:0;
+  }
+  .navbar ul li a,button{
+    display:none;
+  }
+  .navbar ul .logo{
+    margin: auto;
+    
+  }
+  .content1{
+    height: 720px;
+  }
+  
+  .end{
+    width: 100%;
+    
+  }
+  .wrapper{
+    display: none;
+    
+  }
+  .cta{
+    margin: 50% 0;
+    padding: 3rem;
+    text-align: left;
+  }
+  .cta h1{
+    font-size: 4rem;
+  }
+  
+>>>>>>> bc035af147dee6970d38eebabe85cd9f72b36420
 }
