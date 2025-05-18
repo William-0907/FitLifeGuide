@@ -8,7 +8,5 @@ def home(request):
 def test(request):
     return render(request, 'mainpage/test.html')
 
-def discussions(request):
-    return render(request, 'mainpage/discussions.html')
 
 
