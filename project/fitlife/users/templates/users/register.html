@@ -1,0 +1,12 @@
+
+    <div class="form-popup" id="signup-box">
+      <form action="" method="post">
+        <h2 class="form-header">Sign Up</h2>
+        {%  csrf_token %}
+        <input type="text" name="username" id="username-box" placeholder="Username">
+        <input type="email" name="email" id="email-box" placeholder="Email">
+        <input type="password" name="password" id="password-box" placeholder="Password">
+        <button class="form-button" type="submit">SIGN UP</button>
+      </form>
+    </div>
+  </div>

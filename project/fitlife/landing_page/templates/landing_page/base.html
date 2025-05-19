@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href= "{% static 'landing_page/styles/index.css' %}" >
+  <link rel="stylesheet" href= "{% static 'landing_page/styles/index1.css' %}" >
   <script src="https://kit.fontawesome.com/bb98d90c72.js" crossorigin="anonymous"></script>
     <script>
 
@@ -53,46 +53,15 @@
 </head>
 
 <body>
-
-  <div class="modal" id="signup-modal">
-    <p id="close" onclick="closeModal('signup-modal')"><i class="fa-solid fa-circle-xmark"></i></p>
-    <div class="form-popup" id="signup-box">
-      <form action="" method="post">
-        <h2 class="form-header">Sign Up</h2>
-        {%  csrf_token %}
-        <input type="text" name="username" id="username-box" placeholder="Username">
-        <input type="email" name="email" id="email-box" placeholder="Email">
-        <input type="password" name="password" id="password-box" placeholder="Password">
-        <button class="form-button" type="submit">SIGN UP</button>
-      </form>
-    </div>
-  </div>
-  
-  <div class="modal" id="login-modal">
-    <p id="close" onclick="closeModal('login-modal')"><i class="fa-solid fa-circle-xmark"></i></p>
-    <div class="form-popup" id="login-box">
-      <form action="" method="post">
-        {% csrf_token %}
-        <h2 class="form-header">Log In</h2>
-        <input type="text" name="username" id="username-box" placeholder="Username">
-        <input type="password" name="password" id="password-box" placeholder="Password">
-        <button class="form-button" type="submit">LOGIN</button>
-      </form>
-    </div>
-  </div>
   <div class="content1"> 
-    
-
     <div class="navbar">
-      
-
       <ul>
         <div class="logo"><a>FitLifeGuide</a></div>
         <li><a href="">About Us</a></li>
         <li><a href="">Contact Us</a></li>
 
-        <button class="action_btn" onclick="formActive('signup-modal')">Sign Up</button>
-        <button class="action_btn" onclick="formActive('login-modal')">Log in</button>
+        <a href="{% url 'register' %}"><button class="action_btn" >Sign Up</button></a>
+        <a href="{% url 'login' %}"><button class="action_btn" >Log in</button></a>
       </ul>
     </div>
 

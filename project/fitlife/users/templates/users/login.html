@@ -1,6 +1,16 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Register</button>
-  </form>
-  
+{% extends 'landing_page/base.html' %}
+{% load static %}
+
+{% block content1 %}
+<div class="form-container">
+  <div class="form-group">
+    <form action="" method="post">
+      {% csrf_token %}
+      <h2 class="form-header">Log In</h2>
+      <input type="text" name="username" id="username-box" placeholder="Username">
+      <input type="password" name="password" id="password-box" placeholder="Password">
+      <button class="form-button" type="submit">LOGIN</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
